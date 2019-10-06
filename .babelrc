@@ -1,0 +1,19 @@
+{
+  "presets": ["latest", "react", "stage-0"],
+  "plugins": [
+    "transform-runtime",
+    [
+      "babel-plugin-root-import",
+      [
+        {
+          "rootPathPrefix": "~",
+          "rootPathSuffix": "src"
+        },
+        {
+          "rootPathPrefix": "App",
+          "rootPathSuffix": "src/app"
+        }
+      ]
+    ]
+  ]
+}
