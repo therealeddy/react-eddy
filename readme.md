@@ -7,7 +7,63 @@
 
 > Advanced template for ReactJS
 
-## Eslint Config
+## ESLint Config
+
+Adicione o ESLint como uma dependência de desenvolvimento:
+
+```sh
+yarn add eslint -D
+```
+
+Inicie o ESLint com o comando abaixo:
+
+```sh
+yarn eslint –init
+```
+Responda as perguntas na seguinte ordem:
+
+1. **How Would you like to use ESLint?**
+*To check syntax, find problems, and enforce code style*
+
+2. **What type of modules does your project use?**
+*JavaScript modules (import/export)*
+
+3. **Which framework does your project use?**
+*React*
+
+4. **Where does your code run?**
+*Browser*
+
+5. **How would you like to define a style for your project?**
+*Use a popular style guide*
+
+6. **Which style guide do you want to follow?**
+*Airbnb*
+
+7. **What format do you want your config file to be in?**
+*JavaScript*
+
+8. **Do you want to downgrade?**
+*Y*
+
+9. **Would you like to install them now with npm?**
+*Y*
+
+Depois de instalado, perceba que foi gerado um arquivo ```package-lock.json``` na raiz do projeto, isso porque foi instalado utilizando o NPM.
+
+Remova o arquivo ```package-lock.json``` e instale as dependências novamente.
+
+```sh
+yarn
+```
+
+Depois de instalado, adicione as seguintes dependências em modo de desenvolvimento:
+
+```sh
+yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+```
+
+Depois de instalado, perceba que foi gerado um arquivo ```.eslintrc.js``` na raiz do projeto, remova o que tem dentro do arquivo e cole o seguinte trecho de código:
 
 ```javascript
 
