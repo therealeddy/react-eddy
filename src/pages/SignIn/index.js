@@ -12,7 +12,7 @@ export default function SignIn() {
   return (
     <Container>
       <Title>
-        <Rocket /> React Eddy <Rocket />
+        <Rocket /> Eddy React <Rocket />
       </Title>
     </Container>
   );
