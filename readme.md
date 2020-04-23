@@ -7,46 +7,97 @@
 
 > Advanced template for ReactJS
 
+## Microsoft Visual Code Config
+
+Abra o arquivo ```settings.json``` do seu Visual Code e adicione o seguinte trecho de codigo.
+
+```json
+{
+  "window.zoomLevel": 0,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Dracula",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.rulers": [80, 120],
+  "editor.renderLineHighlight": "gutter",
+  "editor.tabSize": 4,
+  "terminal.integrated.fontSize": 14,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "editor.parameterHints.enabled": false,
+  "breadcrumbs.enabled": true,
+  "javascript.suggest.autoImports": false,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    },
+  ],
+}
+```
+
 ## ESLint Config
 
-Adicione o ESLint como uma dependência de desenvolvimento:
+Instale as extensões ```ESLint``` e ```Prettier - Code formatter``` em seu Visual Code.
+
+Adicione o ESLint como uma dependência de desenvolvimento.
 
 ```sh
 yarn add eslint -D
 ```
 
-Inicie o ESLint com o comando abaixo:
+Inicie o ESLint com o comando abaixo.
 
 ```sh
 yarn eslint –init
 ```
-Responda as perguntas na seguinte ordem:
+Responda as perguntas na seguinte ordem.
 
-1. **How Would you like to use ESLint?**
+1. **How Would you like to use ESLint?** <br/>
 *To check syntax, find problems, and enforce code style*
 
-2. **What type of modules does your project use?**
+2. **What type of modules does your project use?** <br/>
 *JavaScript modules (import/export)*
 
-3. **Which framework does your project use?**
+3. **Which framework does your project use?** <br/>
 *React*
 
-4. **Where does your code run?**
+4. **Where does your code run?** <br/>
 *Browser*
 
-5. **How would you like to define a style for your project?**
+5. **How would you like to define a style for your project?** <br/>
 *Use a popular style guide*
 
-6. **Which style guide do you want to follow?**
+6. **Which style guide do you want to follow?** <br/>
 *Airbnb*
 
-7. **What format do you want your config file to be in?**
+7. **What format do you want your config file to be in?** <br/>
 *JavaScript*
 
-8. **Do you want to downgrade?**
+8. **Do you want to downgrade?** <br/>
 *Y*
 
-9. **Would you like to install them now with npm?**
+9. **Would you like to install them now with npm?** <br/>
 *Y*
 
 Depois de instalado, perceba que foi gerado um arquivo ```package-lock.json``` na raiz do projeto, isso porque foi instalado utilizando o NPM.
@@ -57,13 +108,13 @@ Remova o arquivo ```package-lock.json``` e instale as dependências novamente.
 yarn
 ```
 
-Depois de instalado, adicione as seguintes dependências em modo de desenvolvimento:
+Depois de instalado, adicione as seguintes dependências em modo de desenvolvimento.
 
 ```sh
 yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
 ```
 
-Depois de instalado, perceba que foi gerado um arquivo ```.eslintrc.js``` na raiz do projeto, remova o que tem dentro do arquivo e cole o seguinte trecho de código:
+Depois de instalado, perceba que foi gerado um arquivo ```.eslintrc.js``` na raiz do projeto, remova o que tem dentro do arquivo e cole o seguinte trecho de código.
 
 ```javascript
 
