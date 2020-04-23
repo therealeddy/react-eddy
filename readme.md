@@ -7,55 +7,6 @@
 
 > Advanced template for ReactJS
 
-## Microsoft Visual Code Config
-
-Abra o arquivo ```settings.json``` do seu Visual Code e adicione o seguinte trecho de codigo.
-
-```json
-{
-  "window.zoomLevel": 0,
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Dracula",
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 16,
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.rulers": [80, 120],
-  "editor.renderLineHighlight": "gutter",
-  "editor.tabSize": 4,
-  "terminal.integrated.fontSize": 14,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx"
-  },
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "editor.parameterHints.enabled": false,
-  "breadcrumbs.enabled": true,
-  "javascript.suggest.autoImports": false,
-  "eslint.autoFixOnSave": true,
-  "eslint.validate": [
-    {
-      "language": "javascript",
-      "autoFix": true
-    },
-    {
-      "language": "javascriptreact",
-      "autoFix": true
-    },
-    {
-      "language": "typescript",
-      "autoFix": true
-    },
-    {
-      "language": "typescriptreact",
-      "autoFix": true
-    },
-  ],
-}
-```
-
 ## ESLint Config
 
 Instale as extensões ```ESLint``` e ```Prettier - Code formatter``` em seu Visual Code.
@@ -187,6 +138,55 @@ module.exports = {
   },
 };
 
+```
+
+## Microsoft Visual Code Config
+
+Abra o arquivo ```settings.json``` do seu Visual Code e adicione o seguinte trecho de codigo.
+
+```json
+{
+  "window.zoomLevel": 0,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Dracula",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.rulers": [80, 120],
+  "editor.renderLineHighlight": "gutter",
+  "editor.tabSize": 4,
+  "terminal.integrated.fontSize": 14,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "editor.parameterHints.enabled": false,
+  "breadcrumbs.enabled": true,
+  "javascript.suggest.autoImports": false,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    },
+  ],
+}
 ```
 
 ## Author
