@@ -9,20 +9,21 @@
 
 ## ESLint Config
 
-Instale as extensões ```ESLint``` e ```Prettier - Code formatter``` em seu Visual Code.
+Install the ```ESLint``` and ```Prettier - Code formatter``` extensions in your Visual Code.
 
-Adicione o ESLint como uma dependência de desenvolvimento.
+Add ESLint as a development dependency.
 
 ```sh
 yarn add eslint -D
 ```
 
-Inicie o ESLint com o comando abaixo.
+Start ESLint with the command below.
 
 ```sh
 yarn eslint –init
 ```
-Responda as perguntas na seguinte ordem.
+
+Answer the questions in the following order.
 
 1. **How Would you like to use ESLint?** <br/>
 *To check syntax, find problems, and enforce code style*
@@ -51,24 +52,23 @@ Responda as perguntas na seguinte ordem.
 9. **Would you like to install them now with npm?** <br/>
 *Y*
 
-Depois de instalado, perceba que foi gerado um arquivo ```package-lock.json``` na raiz do projeto, isso porque foi instalado utilizando o NPM.
+Once installed, notice that a ```package-lock.json``` file was generated at the root of the project, because it was installed using NPM.
 
-Remova o arquivo ```package-lock.json``` e instale as dependências novamente.
+Remove the ```package-lock.json``` file and install the dependencies again.
 
 ```sh
 yarn
 ```
 
-Depois de instalado, adicione as seguintes dependências em modo de desenvolvimento.
+Once installed, add the following dependencies in development mode.
 
 ```sh
 yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
 ```
 
-Depois de instalado, perceba que foi gerado um arquivo ```.eslintrc.js``` na raiz do projeto, remova o que tem dentro do arquivo e cole o seguinte trecho de código.
+Once installed, notice that an ```.eslintrc.js``` file was generated at the root of the project, remove what is inside the file and paste the following code snippet.
 
 ```javascript
-
 module.exports = {
   parser: 'babel-eslint',
   env: {
@@ -137,12 +137,11 @@ module.exports = {
     'import/resolver': 'babel-plugin-root-import',
   },
 };
-
 ```
 
 ## Microsoft Visual Code Config
 
-Abra o arquivo ```settings.json``` do seu Visual Code e adicione o seguinte trecho de codigo.
+Open your Visual Code ```settings.json``` file and add the following code snippet.
 
 ```json
 {
