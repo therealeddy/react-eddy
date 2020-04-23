@@ -4,16 +4,11 @@
     "transform-runtime",
     [
       "babel-plugin-root-import",
-      [
-        {
-          "rootPathPrefix": "~",
-          "rootPathSuffix": "src"
-        },
-        {
-          "rootPathPrefix": "App",
-          "rootPathSuffix": "src/app"
-        }
-      ]
-    ]
+      {
+        "rootPathPrefix": "~",
+        "rootPathSuffix": "src"
+      }
+    ],
+    ["@babel/plugin-proposal-optional-chaining", { "loose": false }]
   ]
 }

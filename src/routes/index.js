@@ -1,13 +1,17 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Main } from 'App/pages';
+import { Switch } from 'react-router-dom';
+
+import { SignIn } from '~/pages';
+
+import Route from './Routes';
 
 export default function Routes() {
   return (
-    <BrowserRouter>
+    <Switch>
       <Switch>
-        <Route path="/" exact component={Main} />
+        <Route path="/" exact component={SignIn} />
+        <Route path="/dashboard" component={SignIn} isPrivate />
       </Switch>
-    </BrowserRouter>
+    </Switch>
   );
 }

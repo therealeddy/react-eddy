@@ -1,19 +1,13 @@
-const { addBabelPlugin, override } = require('customize-cra');
+const { override, addBabelPlugins } = require('customize-cra');
 
 module.exports = override(
-  addBabelPlugin([
-    'babel-plugin-root-import',
-    {
-      paths: [
-        {
-          rootPathSuffix: './src',
-          rootPathPrefix: '~/'
-        },
-        {
-          rootPathSuffix: './src/app',
-          rootPathPrefix: 'App/'
-        }
-      ]
-    }
-  ])
+  addBabelPlugins(
+    [
+      'babel-plugin-root-import',
+      {
+        rootPathSuffix: 'src',
+      },
+    ],
+    ['@babel/plugin-proposal-optional-chaining', { loose: false }]
+  )
 );
