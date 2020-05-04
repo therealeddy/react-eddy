@@ -20,7 +20,7 @@ yarn add eslint -D
 Start ESLint with the command below.
 
 ```sh
-yarn eslint –init
+yarn eslint –-init
 ```
 
 Or
