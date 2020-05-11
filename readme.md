@@ -18,7 +18,7 @@ yarn add husky -D
 Also add the following libraries below, under development.
 
 ```sh
-yarn add commitizen lint-staged @commitlint/config-conventional @commitlint/cli -D
+yarn add commitizen lint-staged @commitlint/config-conventional @commitlint/cli @babel/plugin-proposal-optional-chaining -D
 ```
 
 Paste the excerpt below into your file ```package.json```.
@@ -116,7 +116,7 @@ yarn
 Once installed, add the following dependencies in development mode.
 
 ```sh
-yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint eslint-plugin-import-helpers -D
+yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint eslint-plugin-import-helpers eslint-import-resolver-babel-plugin-root-import -D
 ```
 
 Once installed, notice that an ```.eslintrc.js``` file was generated at the root of the project, remove what is inside the file and paste the following code snippet.
@@ -216,7 +216,7 @@ Open your Visual Code ```settings.json``` file and add the following code snippe
   "workbench.iconTheme": "material-icon-theme",
   "editor.rulers": [80, 120],
   "editor.renderLineHighlight": "gutter",
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
   "terminal.integrated.fontSize": 14,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
