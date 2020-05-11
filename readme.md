@@ -45,6 +45,8 @@ Advanced template for ReactJS.
 
 ## Dependencies
 
+Remember to run or run the ```yarn upgrade``` command to update as dependencies.
+
 **Normal:**
 
 - axios
