@@ -18,30 +18,32 @@ yarn add husky -D
 Also add the following libraries below, under development.
 
 ```sh
-yarn add commitizen lint-staged @commitlint/config-conventional @commitlint/cli @babel/plugin-proposal-optional-chaining -D
+yarn add commitizen lint-staged @commitlint/config-conventional @commitlint/cli -D
 ```
 
 Paste the excerpt below into your file ```package.json```.
 
 ```json
-"husky": {
+{
+  "husky": {
     "hooks": {
-        "pre-commit": "lint-staged",
-        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-        "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
-},
-"lint-staged": {
+  },
+  "lint-staged": {
     "*.js": [
-    "prettier --write",
-    "eslint --fix --ignore-pattern '!.eslintrc.js'",
-    "git add ."
+      "prettier --write",
+      "eslint --fix --ignore-pattern '!.eslintrc.js'",
+      "git add ."
     ]
-},
-"config": {
+  },
+  "config": {
     "commitizen": {
-        "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-conventional-changelog"
     }
+  }
 }
 ```
 
@@ -148,6 +150,7 @@ module.exports = {
     'import',
     'react-hooks',
     'eslint-plugin-import-helpers',
+    'eslint-import-resolver-babel-plugin-root-import',
     'prettier',
   ],
   rules: {
