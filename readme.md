@@ -22,6 +22,31 @@ Advanced template for ReactJS.
 
 <br><br>
 
+## Structure
+
+<br><br>
+
+## Dependencies
+
+- axios
+- date-fns
+- history
+- json-server
+- react-icons
+- react-redux
+- react-router-dom
+- react-toastify
+- reactotron-react-js
+- reactotron-redux
+- reactotron-redux-saga
+- redux
+- redux-persist
+- redux-saga
+- styled-components
+- yup
+
+<br><br>
+
 ## Husky
 
 Add the hunsky library in development.
