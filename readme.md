@@ -5,7 +5,22 @@
   <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
 </p>
 
-> Advanced template for ReactJS
+<br><br>
+
+## Overview
+
+Advanced template for ReactJS.
+
+- **[Structure](#structure)**
+- **[Dependencies](#dependencies)**
+- **[Husky](#husky)**
+- **[ESLint](#eslint)**
+- **[Microsoft Visual Code](#microsoft-visual-code)**
+- **[Author](#author)**
+- **[Show your support](#show-your-support)**
+
+
+<br><br>
 
 ## Husky
 
@@ -53,6 +68,8 @@ Create a file called ```commitlint.config.js``` at the root of the project and p
 module.exports = { extends: ['@commitlint/config-conventional'] };
 ```
 
+<br><br>
+
 ## ESLint
 
 Install the ```ESLint``` and ```Prettier - Code formatter``` extensions in your Visual Code.
@@ -77,34 +94,34 @@ Or
 
 Answer the questions in the following order.
 
-1. **How Would you like to use ESLint?** <br/>
+1. **How Would you like to use ESLint?** <br>
 *To check syntax, find problems, and enforce code style*
 
-2. **What type of modules does your project use?** <br/>
+2. **What type of modules does your project use?** <br>
 *JavaScript modules (import/export)*
 
-3. **Which framework does your project use?** <br/>
+3. **Which framework does your project use?** <br>
 *React*
 
-4. **Does your project use TypeScript?** <br/>
+4. **Does your project use TypeScript?** <br>
 *(y/N)*
 
-5. **Where does your code run?** <br/>
+5. **Where does your code run?** <br>
 *Browser*
 
-6. **How would you like to define a style for your project?** <br/>
+6. **How would you like to define a style for your project?** <br>
 *Use a popular style guide*
 
-7. **Which style guide do you want to follow?** <br/>
+7. **Which style guide do you want to follow?** <br>
 *Airbnb*
 
-8. **What format do you want your config file to be in?** <br/>
+8. **What format do you want your config file to be in?** <br>
 *JavaScript*
 
-9. **Do you want to downgrade?** <br/>
+9. **Do you want to downgrade?** <br>
 *Y*
 
-10. **Would you like to install them now with npm?** <br/>
+10. **Would you like to install them now with npm?** <br>
 *Y*
 
 Once installed, notice that a ```package-lock.json``` file was generated at the root of the project, because it was installed using NPM.
@@ -164,8 +181,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-underscore-dangle': 'off',
     camelcase: 'off',
-    'no-console': 'error',
-    // 'no-console': ['error', { allow: ['tron'] }],
+    'no-console': ['error', { allow: ['tron'] }],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/jsx-props-no-spreading': 'off',
@@ -204,6 +220,8 @@ Create a file at the root of the project called ```.prettierrc``` and paste the 
   "trailingComma": "es5"
 }
 ```
+
+<br><br>
 
 ## Microsoft Visual Code
 
@@ -253,6 +271,8 @@ Open your Visual Code ```settings.json``` file and add the following code snippe
   ],
 }
 ```
+
+<br><br>
 
 ## Author
 
