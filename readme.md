@@ -24,11 +24,27 @@ Advanced template for ReactJS.
 
 ## Structure
 
+- ```components``` - Application components
+- ```config``` - Configuration files
+- ```hooks``` - Custom hooks
+- ```images``` - Application Images
+- ```layouts``` - Auth and Default layouts
+- ```pages``` - Application pages
+- ```routes``` - Route configuration
+- ```services``` - API configuration
+- ```store``` - Redux and Redux Saga configuration
+- ```styles``` - Global styles and application themes
+- ```utils``` - Useful files
+- ```validators``` - Yup Validation
+- ```App.js``` - Global imports
+- ```index.js``` - Render application
+
 <br><br>
 
 ## Dependencies
 
 **Normal:**
+
 - axios
 - date-fns
 - history
@@ -47,6 +63,7 @@ Advanced template for ReactJS.
 - yup
 
 **Dev Dependencies:**
+
 - @babel/plugin-proposal-optional-chaining
 - babel-plugin-root-import
 - customize-cra
