@@ -45,7 +45,7 @@ Advanced template for ReactJS.
 
 ## Dependencies
 
-Remember to run or run the ```yarn upgrade``` command to update as dependencies.
+Remember to execute the command ```yarn upgrade``` to update with dependencies.
 
 **Normal:**
 
