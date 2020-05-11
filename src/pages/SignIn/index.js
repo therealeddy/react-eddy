@@ -14,7 +14,7 @@ export default function SignIn() {
   return (
     <Container>
       <Title>
-        <Rocket color={colors.primary} /> Eddy React <Rocket />
+        <Rocket color={colors.primary} /> React Eddy <Rocket />
       </Title>
     </Container>
   );

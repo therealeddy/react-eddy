@@ -1,4 +1,4 @@
-<h1 align="center">Eddy React 👋</h1>
+<h1 align="center">🚀 React Eddy 🚀</h1>
 
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
@@ -164,7 +164,8 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-underscore-dangle': 'off',
     camelcase: 'off',
-    'no-console': ['error', { allow: ['tron'] }],
+    'no-console': 'error',
+    // 'no-console': ['error', { allow: ['tron'] }],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/jsx-props-no-spreading': 'off',
