@@ -7,7 +7,51 @@
 
 > Advanced template for ReactJS
 
-## ESLint Config
+## Husky
+
+Add the hunsky library in development.
+
+```sh
+yarn add husky -D
+```
+
+Also add the following libraries below, under development.
+
+```sh
+yarn add commitizen lint-staged @commitlint/config-conventional @commitlint/cli -D
+```
+
+Paste the excerpt below into your file ```package.json```.
+
+```json
+"husky": {
+    "hooks": {
+        "pre-commit": "lint-staged",
+        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+        "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+},
+"lint-staged": {
+    "*.js": [
+    "prettier --write",
+    "eslint --fix --ignore-pattern '!.eslintrc.js'",
+    "git add ."
+    ]
+},
+"config": {
+    "commitizen": {
+        "path": "./node_modules/cz-conventional-changelog"
+    }
+}
+```
+
+Create a file called ```commitlint.config.js``` at the root of the project and paste the code below.
+
+```javascript
+module.exports = { extends: ['@commitlint/config-conventional'] };
+```
+
+## ESLint
 
 Install the ```ESLint``` and ```Prettier - Code formatter``` extensions in your Visual Code.
 
@@ -20,7 +64,7 @@ yarn add eslint -D
 Start ESLint with the command below.
 
 ```sh
-yarn eslint –-init
+yarn eslint --init
 ```
 
 Or
@@ -72,7 +116,7 @@ yarn
 Once installed, add the following dependencies in development mode.
 
 ```sh
-yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint eslint-plugin-import-helpers -D
 ```
 
 Once installed, notice that an ```.eslintrc.js``` file was generated at the root of the project, remove what is inside the file and paste the following code snippet.
@@ -148,7 +192,16 @@ module.exports = {
 };
 ```
 
-## Microsoft Visual Code Config
+Create a file at the root of the project called ```.prettierrc``` and paste the json below.
+
+```json
+{
+  "singleQuote": true,
+  "trailingComma": "es5"
+}
+```
+
+## Microsoft Visual Code
 
 Open your Visual Code ```settings.json``` file and add the following code snippet.
 
