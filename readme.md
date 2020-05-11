@@ -28,6 +28,7 @@ Advanced template for ReactJS.
 
 ## Dependencies
 
+**Normal:**
 - axios
 - date-fns
 - history
@@ -44,6 +45,12 @@ Advanced template for ReactJS.
 - redux-saga
 - styled-components
 - yup
+
+**Dev Dependencies:**
+- @babel/plugin-proposal-optional-chaining
+- babel-plugin-root-import
+- customize-cra
+- react-app-rewired
 
 <br><br>
 
