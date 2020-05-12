@@ -220,7 +220,6 @@ module.exports = {
     'import',
     'react-hooks',
     'eslint-plugin-import-helpers',
-    'eslint-import-resolver-babel-plugin-root-import',
     'prettier',
   ],
   rules: {
