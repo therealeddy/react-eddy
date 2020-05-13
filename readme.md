@@ -131,6 +131,8 @@ Below are listed possible questions that Husky will ask.
 
 1. Select the type of change that you're committing: (Use arrow keys)
 
+<div align="center">
+  
 Prefix | Description
 ------ | ------
 ```feat```      | A new feature
@@ -144,6 +146,8 @@ Prefix | Description
 ```ci```        | Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
 ```chore```     | Other changes that don't modify src or test files
 ```revert```    | Reverts a previous commit
+
+</div>
 
 2. What is the scope of this change (e.g. component or file name): (press enter to skip)
 3. Write a short, imperative tense description of the change (max 66 chars):
