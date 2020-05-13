@@ -77,7 +77,9 @@ Remember to execute the command ```yarn upgrade``` to update with dependencies.
 
 ## Husky
 
-Add the hunsky library in development.
+For standardization of commits for GitHub within a project, using the library [Husky](https://github.com/typicode/husky), together with libraries [commitizen](https://github.com/commitizen/cz-cli), [lint-staged](https://github.com/okonet/lint-staged), [@commitlint/config-conventional](https://www.npmjs.com/package/@commitlint/config-conventional) and [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli).
+
+Add the Hunsky library in development.
 
 ```sh
 yarn add husky -D
@@ -121,9 +123,36 @@ Create a file called ```commitlint.config.js``` at the root of the project and p
 module.exports = { extends: ['@commitlint/config-conventional'] };
 ```
 
+After these settings, just type ```git add .``` and ```git commit``` on your terminal and Husky will take action.
+
+Below are listed possible questions that Husky will ask.
+
+1. Select the type of change that you're committing: (Use arrow keys)
+  - feat:       A new feature
+  - fix:        A bug fix
+  - docs:       Documentation only changes
+  - style:      Changes that do not affect the meaning of the code (white-space, for matting, missing semi-colons, etc)
+  - refactor:   A code change that neither fixes a bug nor adds a feature
+  - perf:       A code change that improves performance
+  - test:       Adding missing tests or correcting existing tests
+  - build:      Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+  - ci:         Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+  - chore:      Other changes that don't modify src or test files
+  - revert:     Reverts a previous commit
+2. What is the scope of this change (e.g. component or file name): (press enter to skip)
+3. Write a short, imperative tense description of the change (max 66 chars):
+4. Provide a longer description of the change: (press enter to skip)
+5. Are there any breaking changes? (y/N)
+	- A BREAKING CHANGE commit requires a body. Please enter a longer description of the commit itself:
+	- Describe the breaking changes:
+6. Does this change affect any open issues? (y/N)
+	- Add issue references (e.g. "fix #123", "re #123".):
+
 <br><br>
 
 ## ESLint
+
+For better standardization of codes within the project, we use the [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) libraries.
 
 Install the ```ESLint``` and ```Prettier - Code formatter``` extensions in your Visual Code.
 
