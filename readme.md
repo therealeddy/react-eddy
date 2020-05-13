@@ -130,24 +130,17 @@ After these settings, just type ```git add .``` and ```git commit``` on your ter
 Below are listed possible questions that Husky will ask.
 
 1. Select the type of change that you're committing: (Use arrow keys)
-
-<div align="center">
-  
-Prefix | Description
------- | ------
-```feat```      | A new feature
-```fix```       | A bug fix
-```docs```      | Documentation only changes
-```style```     | Changes that do not affect the meaning of the code (white-space, for matting, missing semi-colons, etc)
-```refactor```  | A code change that neither fixes a bug nor adds a feature
-```perf```      | A code change that improves performance
-```test```      | Adding missing tests or correcting existing tests
-```build```     | Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
-```ci```        | Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
-```chore```     | Other changes that don't modify src or test files
-```revert```    | Reverts a previous commit
-
-</div>
+- ```feat```:         A new feature
+- ```fix```:          A bug fix
+- ```docs```:         Documentation only changes
+- ```style```:        Changes that do not affect the meaning of the code (white-space, for matting, missing semi-colons, etc)
+- ```refactor```:     A code change that neither fixes a bug nor adds a feature
+- ```perf```:         A code change that improves performance
+- ```test```:         Adding missing tests or correcting existing tests
+- ```build```:        Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+- ```ci```:           Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+- ```chore```:        Other changes that don't modify src or test files
+- ```revert```:       Reverts a previous commit
 
 2. What is the scope of this change (e.g. component or file name): (press enter to skip)
 3. Write a short, imperative tense description of the change (max 66 chars):
