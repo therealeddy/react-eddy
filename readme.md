@@ -3,8 +3,12 @@
 <br>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-1.1.0-blue.svg" />
-  <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  <a href="https://github.com/therealeddy/react-eddy/releases">
+    <img alt="Version" src="https://img.shields.io/badge/version-1.1.0-blue.svg" />
+  </a>
+  <a href="#overview">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
 </p>
 
 <br><br>
