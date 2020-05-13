@@ -77,7 +77,7 @@ Remember to execute the command ```yarn upgrade``` to update with dependencies.
 
 ## Husky
 
-For standardization of commits for GitHub within a project, using the library [Husky](https://github.com/typicode/husky), together with libraries [commitizen](https://github.com/commitizen/cz-cli), [lint-staged](https://github.com/okonet/lint-staged), [@commitlint/config-conventional](https://www.npmjs.com/package/@commitlint/config-conventional) and [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli).
+For standardization of commits for GitHub within a project, using the library **[Husky](https://github.com/typicode/husky)**, together with libraries **[commitizen](https://github.com/commitizen/cz-cli)**, **[lint-staged](https://github.com/okonet/lint-staged)**, **[@commitlint/config-conventional](https://www.npmjs.com/package/@commitlint/config-conventional)** and **[@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)**.
 
 Add the Hunsky library in development.
 
@@ -156,7 +156,7 @@ Prefix | Description
 
 ## ESLint
 
-For better standardization of codes within the project, we use the [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) libraries.
+For better standardization of codes within the project, we use the **[ESLint](https://eslint.org/)** and **[Prettier](https://prettier.io/)** libraries.
 
 Install the ```ESLint``` and ```Prettier - Code formatter``` extensions in your Visual Code.
 
