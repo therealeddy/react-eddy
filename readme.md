@@ -1,4 +1,6 @@
-<h1 align="center">🚀 React Eddy 🚀</h1>
+<h2 align="center">
+  <img src="docs/react-eddy.png" height="90" alt="react-eddy" />
+</h2>
 
 <br>
 
