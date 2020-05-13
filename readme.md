@@ -2,14 +2,12 @@
 
 <br>
 
-<p align="center">
-  <a href="https://github.com/therealeddy/react-eddy/releases">
-    <img alt="Version" src="https://img.shields.io/badge/version-1.1.0-blue.svg" />
-  </a>
-  <a href="#overview">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-</p>
+<div align="center">
+  
+[![version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/therealeddy/react-eddy/releases)<space><space>
+[![documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](#overview)
+
+</div>
 
 <br><br>
 
