@@ -5,7 +5,7 @@
 <br>
 
 <div align="center">
-  
+
 [![version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/therealeddy/react-eddy/releases)<space><space>
 [![documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](#overview)
 
@@ -23,6 +23,7 @@ Advanced template for ReactJS.
 - **[ESLint](#eslint)**
 - **[Microsoft Visual Code](#microsoft-visual-code)**
 - **[Author](#author)**
+- **[License](#license)**
 - **[Show your support](#show-your-support)**
 
 
@@ -363,6 +364,10 @@ Open your Visual Code ```settings.json``` file and add the following code snippe
 ## Author
 
 👤 **[Eduardo Mauricio](https://github.com/therealeddy)**
+
+## License
+
+MIT © **[React Eddy](licence)**
 
 ## Show your support
 
