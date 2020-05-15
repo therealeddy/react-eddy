@@ -4,7 +4,6 @@ import './bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default createGlobalStyle`
-  @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
 
   * {
     margin: 0;
