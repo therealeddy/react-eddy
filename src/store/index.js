@@ -17,10 +17,7 @@ const sagaMiddleware = createSagaMiddleware({
 
 const enhacer =
   process.env.NODE_ENV === 'development'
-    ? compose(
-        console.tron.createEnhancer(),
-        applyMiddleware(sagaMiddleware)
-      )
+    ? compose(console.tron.createEnhancer(), applyMiddleware(sagaMiddleware))
     : applyMiddleware(sagaMiddleware);
 
 const store = createStore(persistReducer(rootReducer), enhacer);

@@ -27,7 +27,7 @@ export default function RouteWrapper({
   return (
     <Route
       {...rest}
-      render={props => (
+      render={(props) => (
         <Layout>
           <Component {...props} />
         </Layout>

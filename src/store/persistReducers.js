@@ -3,7 +3,7 @@ import storage from 'redux-persist/lib/storage';
 
 const nameReducer = process.env.REACT_APP_PERSIST_REDUCER || 'mentores-reducer';
 
-export default reducers => {
+export default (reducers) => {
   const persistedReducer = persistReducer(
     {
       key: nameReducer,
